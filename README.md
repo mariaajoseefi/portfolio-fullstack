@@ -1,6 +1,6 @@
 # 🏡 Majo’s Portfolio
 
-This is my portfolio website, I’m using this project to practice new technologies, explore design, and document what I learn along the way.
+This is my portfolio website, I’m using this project to practice, explore design, and document what I learn along the way.
 
 ## Tech Stack
 
@@ -20,3 +20,4 @@ This project is **under construction**.
 Future plans include:
 - A backend API built with Python
 - Better animations and interactions
+
