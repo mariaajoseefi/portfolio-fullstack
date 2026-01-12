@@ -34,8 +34,8 @@ const geistMono = Geist_Mono({
 // metadata - information about the page, not content you see on the page
 
 export const metadata: Metadata = {
-  title: "Majo's Portfolio",
-  description: "Developer focused on thoughtful design, clean code, and meaningful user experiences.",
+  title: "majo's portfolio",
+  description: "developer focused on thoughtful design, clean code, and meaningful user experiences",
 };
 
 export default function RootLayout({
