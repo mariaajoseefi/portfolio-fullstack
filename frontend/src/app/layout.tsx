@@ -5,6 +5,7 @@ import { Geist, Geist_Mono, Coustard, Imperial_Script } from "next/font/google";
 // each imported font is a function, not a font file
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 /* notes
 import fonts from Google Fonts using next/font/google
@@ -55,6 +56,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

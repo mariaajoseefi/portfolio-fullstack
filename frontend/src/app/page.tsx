@@ -61,50 +61,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* contact section */}
-      <section className="relative bg-white-100 py-32 px-6">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          {/* text */}
-          <div>
-            <h2 className="text-5xl mb-6">
-              Let&apos;s keep in <span className="italic text-7xl">touch !</span>
-            </h2>
-
-            <div className="flex gap-8 text-lg">
-              <a 
-                href="mailto:mariajosefinclan@gmail.com" 
-                className="hover:underline"
-                >
-                Email ↗
-              </a>
-              <a
-                href="https://linkedin.com/in/mariajosefi"
-                target="_blank"
-                className="hover:underline"
-              >
-                LinkedIn ↗
-              </a>
-              <a href="https://github.com/mariaajoseefi" 
-                className="hover:underline">
-                GitHub ↗
-              </a>
-            </div>
-          </div>
-
-          {/* image */}
-          <img
-            src="/images/smiski.png"
-            alt="Smiski doing yoga"
-            className="w-64 opacity-90"
-          />
-        </div>
-
-        {/*footer note */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-sm opacity-70">
-          <p>© 2025 Majo</p>
-        </div>
-      </section>
     </main>
   )
 }
