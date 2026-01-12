@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="w-full border-b border-gray-200 px-6 py-4">
-      <div className="max-w-5xl mx-auto flex items-center justify-center">
-        <div className="flex gap-6 text-sm">
+    <nav className="absolute top-35 left-0 z-20 w-full px-6">
+      <div className="max-w-5xl mx-auto flex justify-center">
+        <div className="flex gap-6 text-sm text-black">
           <Link href="/" className="hover:underline">
             home
           </Link>

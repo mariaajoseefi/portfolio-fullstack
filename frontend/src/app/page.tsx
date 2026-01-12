@@ -1,21 +1,19 @@
 export default function Home() {
   return (
     <main
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center"
+      className="relative min-h-screen flex items-center bg-center bg-no-repeat bg-contain"
       style={{
         backgroundImage: "url('/images/sketchbook.png')",
       }}
     >
-      <div className="max-w-5xl mx-auto px-6">
-        <h1 className="text-5xl font-bold mb-4">
+      <div className="max-w-2xl mx-auto px-6 md:px-20">
+        <h1 className="text-5xl text-center md:text-6xl leading-[1.4]">
           Majo is a
-          <span className="italic"> curious </span>
+          <span className="italic text-6xl md:text-7xl"> software </span>
+          engineer and
+          <span className="italic text-6xl md:text-7xl"> curious </span>
           thinker.
         </h1>
-
-        <p className="text-lg text-gray-700">
-          Product-focused developer with a love for design and systems.
-        </p>
       </div>
     </main>
   )
