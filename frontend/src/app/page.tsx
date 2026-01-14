@@ -19,13 +19,9 @@ export default function Home() {
           <div className="max-w-5xl mx-95 h-full flex items-center px-6">
             <h1 className="text-6xl leading-[1.5] text-left">
               ꙳Majo is a
-              <span className="italic text-8xl">
-                software
-              </span>
+              <span className="italic text-8xl"> software </span>
                 engineer and
-              <span className="italic underline text-8xl">
-                curious 
-              </span>
+              <span className="italic underline text-8xl"> curious </span>
                 thinker.
             </h1>
           </div>
@@ -34,7 +30,7 @@ export default function Home() {
         <img
             src="/images/circle.svg"
             alt="Circle"
-            className="absolute right-93 bottom-105 w-85 opacity-90 z-20"
+            className="absolute right-90 bottom-104 w-85 opacity-90 z-20"
         />
 
         <img

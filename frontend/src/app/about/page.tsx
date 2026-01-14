@@ -21,7 +21,7 @@ export default function About() {
                         drag
                         dragConstraints={constraintsRef}
                         dragMomentum={false}
-                        className="absolute top-5 right-100 z-0 w-[60%] max-w-lg hidden md:block"
+                        className="absolute top-4 right-100 z-0 w-[60%] max-w-lg hidden md:block"
                     />
 
                     <motion.img
@@ -66,7 +66,7 @@ export default function About() {
                         drag
                         dragConstraints={constraintsRef}
                         dragMomentum={false}
-                        className="absolute top-60 left-60 z-20 w-[60%] max-w-md"
+                        className="absolute top-50 left-50 z-20 w-[60%] max-w-md"
                     />
                 </div>
             </section>
