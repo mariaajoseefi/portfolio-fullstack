@@ -1,34 +1,47 @@
 /* purpose: home page */
 
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
     <main className="w-full">
       {/* hero section */}
       <section
-        className="relative min-h-screen bg-center bg-no-repeat bg-contain flex items-center"
+        className="relative min-h-screen bg-center bg-no-repeat bg-contain"
         style={{
           backgroundImage: "url('/images/sketchbook.png')",
         }}
       >
-        <div className="max-w-2xl mx-auto px-20">
-          <h1 className="text-6xl leading-[1.5]">
-            Majo is a
-            <span className="italic text-8xl"> software </span>
-            engineer and
-            <span className="italic underline text-8xl"> curious </span>
-            thinker.
-          </h1>
+        <Navbar variant="overlay" />
+        {/* it visually belongs to the hero section */}
+
+        <div className="absolute inset-0 z-10">
+          <div className="max-w-5xl mx-95 h-full flex items-center px-6">
+            <h1 className="text-6xl leading-[1.5] text-left">
+              ꙳Majo is a
+              <span className="italic text-8xl">
+                software
+              </span>
+                engineer and
+              <span className="italic underline text-8xl">
+                curious 
+              </span>
+                thinker.
+            </h1>
+          </div>
         </div>
+
         <img
-          src="/images/circle.svg"
-          alt="Circle"
-          className="absolute right-93 bottom-105 w-85 opacity-90 z-20"
+            src="/images/circle.svg"
+            alt="Circle"
+            className="absolute right-93 bottom-105 w-85 opacity-90 z-20"
         />
+
         <img
             src="/images/breakfast.png"
             alt="Toast with jam"
             className="absolute right-15 bottom-32 w-100 opacity-90 z-20 -rotate-10"
-          />
+        />
       </section>
 
       {/* projects section */}
@@ -66,7 +79,8 @@ export default function Home() {
 }
 
 /* notes
+relative - creates a positioning context, anchor for absolute children
 bg-cover - image fills the screen
 bg-center - keeps the focal point centered
-min-h-screen - full viewport height
+min-h-screen - full viewport height (section is at least screen height)
 inline backgroundImage - required because Tailwind can’t see dynamic URLs */

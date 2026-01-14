@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Coustard, Imperial_Script } from "next/font/google";
 // each imported font is a function, not a font file
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 /* notes
@@ -54,7 +53,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${coustard.variable} ${imperialScript.variable} antialiased`}
       >
-        <Navbar />
         {children}
         <Footer />
       </body>
