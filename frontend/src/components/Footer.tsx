@@ -9,13 +9,13 @@ export default function Footer() {
         <div>
           <h2 className="text-5xl mb-6">
             Let&apos;s keep in{" "}
-            <span className="italic text-7xl">touch!</span>
+            <span className="font-imperial text-7xl inline-block">touch!</span>
           </h2>
 
           <div className="flex gap-8 text-lg">
             <a
               href="mailto:mariajosefinclan@gmail.com"
-              className="hover:underline"
+              className="hover:underline hover:text-camel"
             >
               Email ↗
             </a>
@@ -24,7 +24,7 @@ export default function Footer() {
               href="https://linkedin.com/in/mariajosefi"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:underline hover:text-camel"
             >
               LinkedIn ↗
             </a>
@@ -33,7 +33,7 @@ export default function Footer() {
               href="https://github.com/mariaajoseefi"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:underline hover:text-camel"
             >
               GitHub ↗
             </a>

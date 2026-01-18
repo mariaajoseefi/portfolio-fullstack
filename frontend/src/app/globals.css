@@ -2,10 +2,23 @@
 
 @import "tailwindcss";
 
-:root {
+/* theme tokens - only variables, no styling logic */
+
+@theme {
+  /* fonts */
+  --font-geist-sans: 'Geist Sans', sans-serif;
+  --font-coustard: 'Coustard', serif;
+  --font-imperial-script: 'Imperial Script', cursive;
+
+  /* colors */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #121212;
+  --color-periwinkle: #b4c4f7;
+  --color-indigo-velvet: #3a2f71;
+  --color-camel: #ad8a64;
 }
+
+/* dark mode tokens - override only variables, not styles */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -14,16 +27,24 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), sans-serif;
+/* base styles - global element rules */
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-geist-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-coustard);
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-coustard), serif;
-}
+/* utilities - reusable classes instead of element selectors */
 
-span.italic {
-  font-family: var(--font-imperial-script), cursive;
+@layer utilities {
+  .font-imperial {
+    font-family: var(--font-imperial-script);
+  }
 }

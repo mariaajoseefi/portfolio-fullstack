@@ -21,7 +21,7 @@ export default function About() {
                         drag
                         dragConstraints={constraintsRef}
                         dragMomentum={false}
-                        className="absolute top-4 right-100 z-0 w-[60%] max-w-lg hidden md:block"
+                        className="absolute top-4 right-[25rem] z-0 w-[60%] max-w-lg hidden md:block"
                     />
 
                     <motion.img
@@ -48,7 +48,7 @@ export default function About() {
                         drag
                         dragConstraints={constraintsRef}
                         dragMomentum={false}
-                        className="absolute bottom-80 left-0 z-0 w-[30%] max-w-lg hidden md:block"
+                        className="absolute bottom-[20rem] left-0 z-0 w-[30%] max-w-lg hidden md:block"
                     />
 
                     <motion.img
@@ -57,7 +57,7 @@ export default function About() {
                         drag
                         dragConstraints={constraintsRef}
                         dragMomentum={false}
-                        className="absolute -bottom-10 left-5 z-10 w-[35%] max-w-lg hidden md:block"
+                        className="absolute bottom-0 left-5 z-10 w-[35%] max-w-lg hidden md:block"
                     />
 
                     <motion.img
@@ -66,7 +66,7 @@ export default function About() {
                         drag
                         dragConstraints={constraintsRef}
                         dragMomentum={false}
-                        className="absolute top-50 left-50 z-20 w-[60%] max-w-md"
+                        className="absolute top-[12rem] left-[18rem] z-20 w-[60%] max-w-md"
                     />
                 </div>
             </section>
@@ -74,7 +74,7 @@ export default function About() {
             <section className="py-8 px-6">
                 <div className="max-w-3xl mx-auto text-right">
                     <h1 className="text-5xl mb-10">
-                        About <span className="italic text-6xl">Me</span>{" "}꙳
+                        About <span className="font-imperial text-6xl">Me</span>{" "}꙳
                     </h1>
 
                     <p className="text-xl leading-relaxed">
@@ -89,7 +89,7 @@ export default function About() {
                             href="https://letterboxd.com/mariajosefi/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="underline"
+                            className="underline hover:text-camel"
                         >
                             watching movies
                         </a>
@@ -98,7 +98,7 @@ export default function About() {
                             href="https://open.spotify.com/user/whitesides22?si=be7cf53689c24edb"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="underline"
+                            className="underline hover:text-camel"
                         >
                             thinking of new playlists
                         </a>
@@ -107,7 +107,7 @@ export default function About() {
                             href="https://www.goodreads.com/user/show/72678996-majo"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="underline"
+                            className="underline hover:text-camel"
                         >
                             catching up on my reading list
                         </a>

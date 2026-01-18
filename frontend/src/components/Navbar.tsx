@@ -17,8 +17,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
 
   const position =
     variant === "overlay"
-      ? "absolute top-35"
-      : "relative mt-10";
+      ? "absolute top-6 sm:top-12 md:top-32"
+      : "relative mt-4 sm:mt-6 md:mt-10";
   
   /* 
   overlay - absolute - floats over image 
@@ -30,25 +30,25 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
     <nav className={`${position} left-0 z-30 w-full`}>
       <div className="max-w-5xl mx-auto px-6">
         <div className="flex justify-center gap-6 text-lg text-black">
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="hover:underline hover:text-camel">
             home
           </Link>
-          <a href="#" className="max-w-5xl">
+          <span className="max-w-5xl hidden sm:inline">
             /
-          </a>
-          <Link href="/projects" className="hover:underline">
+          </span>
+          <Link href="/projects" className="hover:underline hover:text-camel">
             projects
           </Link>
-          <a href="#" className="max-w-5xl">
+          <span className="max-w-5xl hidden sm:inline">
             /
-          </a>
-          <Link href="/about" className="hover:underline">
+          </span>
+          <Link href="/about" className="hover:underline hover:text-camel">
             about
           </Link>
-          <a href="#" className="max-w-5xl">
+          <span className="max-w-5xl hidden sm:inline">
             /
-          </a>
-          <Link href="/resume" className="hover:underline">
+          </span>
+          <Link href="/resume" className="hover:underline hover:text-camel">
             resume
           </Link>
         </div>

@@ -7,43 +7,21 @@ export default function Home() {
     <main className="w-full">
       {/* hero section */}
       <section
-        className="relative min-h-screen bg-center bg-no-repeat bg-contain"
+        className="
+          relative min-h-screen 
+          bg-center bg-no-repeat 
+          bg-[length:120%] sm:bg-[length:100%] md:bg-[length:85%]"
         style={{
-          backgroundImage: "url('/images/sketchbook.png')",
+          backgroundImage: "url('/images/hero_sketchbook.png')",
         }}
       >
         <Navbar variant="overlay" />
-        {/* it visually belongs to the hero section */}
-
-        <div className="absolute inset-0 z-10">
-          <div className="max-w-5xl mx-95 h-full flex items-center px-6">
-            <h1 className="text-6xl leading-[1.5] text-left">
-              ꙳Majo is a
-              <span className="italic text-8xl"> software </span>
-                engineer and
-              <span className="italic underline text-8xl"> curious </span>
-                thinker.
-            </h1>
-          </div>
-        </div>
-
-        <img
-            src="/images/circle.svg"
-            alt="Circle"
-            className="absolute right-90 bottom-104 w-85 opacity-90 z-20"
-        />
-
-        <img
-            src="/images/breakfast.png"
-            alt="Toast with jam"
-            className="absolute right-15 bottom-32 w-100 opacity-90 z-20 -rotate-10"
-        />
       </section>
 
       {/* projects section */}
-      <section className="py-32 px-6">
+      <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl mb-12">What I’ve been <span className="italic text-6xl"> making !</span></h2>
+          <h2 className="text-4xl mb-12">What I’ve been <span className="font-imperial text-6xl"> making !</span></h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* project card */}
