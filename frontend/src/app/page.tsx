@@ -10,7 +10,7 @@ export default function Home() {
         className="
           relative min-h-screen 
           bg-center bg-no-repeat 
-          bg-[length:120%] sm:bg-[length:100%] md:bg-[length:85%]"
+          bg-size[120%] sm:bg-size[100%] md:bg-size[85%]"
         style={{
           backgroundImage: "url('/images/hero_sketchbook.png')",
         }}
