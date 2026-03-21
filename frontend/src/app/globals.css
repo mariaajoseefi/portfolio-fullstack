@@ -1,10 +1,9 @@
-/* purpose: global styles */
+/* purpose: global styles and design system */
 
 @import "tailwindcss";
 
-/* theme tokens - only variables, no styling logic */
-
-@theme {
+/* design tokens: centralized variables for colors and typography */
+:root {
   /* fonts */
   --font-geist-sans: 'Geist Sans', sans-serif;
   --font-coustard: 'Coustard', serif;
@@ -13,22 +12,35 @@
   /* colors */
   --background: #ffffff;
   --foreground: #121212;
-  --color-periwinkle: #b4c4f7;
-  --color-indigo-velvet: #3a2f71;
-  --color-camel: #ad8a64;
+
+  /* custom palette */
+  --camel: #ad8a64;
+  --periwinkle: #b4c4f7;
+  --indigo-velvet: #3a2f71;
 }
 
-/* dark mode tokens - override only variables, not styles */
+/* expose variables to Tailwind utilities (Tailwind v4 way) */
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-camel: var(--camel);
+  --color-periwinkle: var(--periwinkle);
+  --color-indigo-velvet: var(--indigo-velvet);
+}
 
+/* dark mode overrides using system preference */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    --camel: #c9a97c;
+    --periwinkle: #8899cc;
+    --indigo-velvet: #2a2355;
   }
 }
 
-/* base styles - global element rules */
-
+/* base styles: global element defaults */
 @layer base {
   body {
     background-color: var(--background);
@@ -41,8 +53,7 @@
   }
 }
 
-/* utilities - reusable classes instead of element selectors */
-
+/* utilities: reusable custom classes */
 @layer utilities {
   .font-imperial {
     font-family: var(--font-imperial-script);

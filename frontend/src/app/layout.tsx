@@ -1,15 +1,11 @@
-/* purpose: global layout (fonts, navbar, metadata) */
+/* purpose: global layout for shared styles, fonts, and structure */
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Coustard, Imperial_Script } from "next/font/google";
-// each imported font is a function, not a font file
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-/* notes
-import fonts from Google Fonts using next/font/google
-registers fonts as CSS variables
-wraps every page with shared layout (Navbar + body styles) */
+// configure fonts using Next.js font optimization
 
 const coustard = Coustard({
   variable: "--font-coustard",
@@ -33,10 +29,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-/* metadata - information about the page, not content you see on the page
-  sets the page title
-  sets description for SEO
-  controls browser tab info */
+// global metadata for SEO and browser info
 
 export const metadata: Metadata = {
   title: "majo's portfolio",

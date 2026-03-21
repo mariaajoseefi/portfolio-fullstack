@@ -1,11 +1,29 @@
-/* purpose: footer component */
+/* purpose: footer component with contact links and branding */
+
+import Image from "next/image";
+
+// data-driven social links
+const socialLinks = [
+  {
+    href: "mailto:mariajosefinclan@gmail.com",
+    label: "Email ↗",
+  },
+  {
+    href: "https://linkedin.com/in/mariajosefi",
+    label: "LinkedIn ↗",
+  },
+  {
+    href: "https://github.com/mariaajoseefi",
+    label: "GitHub ↗",
+  },
+];
 
 export default function Footer() {
   return (
-    <footer className="py-10 px-6">
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
+    <footer aria-label="Footer" className="py-10 px-6">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         
-        {/* text */}
+        {/* call-to-action */}
         <div>
           <h2 className="text-5xl mb-6">
             Let&apos;s keep in{" "}
@@ -13,38 +31,27 @@ export default function Footer() {
           </h2>
 
           <div className="flex gap-8 text-lg">
-            <a
-              href="mailto:mariajosefinclan@gmail.com"
-              className="hover:underline hover:text-camel"
-            >
-              Email ↗
-            </a>
-
-            <a
-              href="https://linkedin.com/in/mariajosefi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline hover:text-camel"
-            >
-              LinkedIn ↗
-            </a>
-
-            <a
-              href="https://github.com/mariaajoseefi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline hover:text-camel"
-            >
-              GitHub ↗
-            </a>
+            {socialLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline hover:text-camel"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
 
-        {/* image */}
-        <img
-          src="/images/smiski.png"
+        {/* decorative image */}
+        <Image
+          src="/images/ui/smiski.png"
           alt="Smiski doing yoga"
-          className="w-64 opacity-90"
+          width={256}
+          height={256}
+          className="opacity-90"
         />
       </div>
 
@@ -53,5 +60,5 @@ export default function Footer() {
         <p>© 2026 Majo</p>
       </div>
     </footer>
-  )
+  );
 }
