@@ -14,30 +14,25 @@
   --foreground: #121212;
 
   /* custom palette */
-  --camel: #ad8a64;
-  --periwinkle: #b4c4f7;
-  --indigo-velvet: #3a2f71;
+  --lavender-blue: #b1b4d5;
+  --dusty-rose: #e3a3a4;
+  --butter-yellow: #ece398;
+  --navy-blue: #1f3c66;
+  --burgundy: #54152a;
+  --olive-brown: #5b4722;
 }
 
 /* expose variables to Tailwind utilities (Tailwind v4 way) */
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-camel: var(--camel);
-  --color-periwinkle: var(--periwinkle);
-  --color-indigo-velvet: var(--indigo-velvet);
-}
-
-/* dark mode overrides using system preference */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-
-    --camel: #c9a97c;
-    --periwinkle: #8899cc;
-    --indigo-velvet: #2a2355;
-  }
+  
+  --color-lavender-blue: var(--lavender-blue);
+  --color-dusty-rose: var(--dusty-rose);
+  --color-butter-yellow: var(--butter-yellow);
+  --color-navy-blue: var(--navy-blue);
+  --color-burgundy: var(--burgundy);
+  --color-olive-brown: var(--olive-brown);
 }
 
 /* base styles: global element defaults */

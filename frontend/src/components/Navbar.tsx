@@ -22,7 +22,7 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
   // determines navbar positioning based on page context
   const position =
     variant === "overlay"
-      ? "absolute top-6 sm:top-12 md:top-32"
+      ? "absolute top-6 sm:top-12 md:top-22"
       : "relative mt-4 sm:mt-6 md:mt-10";
 
   return (
@@ -31,7 +31,7 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
       className={`${position} left-0 z-30 w-full`}
     >
       <div className="max-w-5xl mx-auto px-6">
-        <div className="flex justify-center gap-6 text-lg text-foreground">
+        <div className="flex justify-center gap-6 text-lg font-medium text-foreground">
           {navLinks.map((link, index) => (
             <div key={link.href} className="flex items-center gap-6">
 
@@ -41,7 +41,7 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition hover:underline hover:text-camel"
+                  className="transition hover:underline hover:text-lavender-blue"
                 >
                   {link.label}
                 </a>
@@ -49,7 +49,7 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                 /* internal link (Next.js routing) */
                 <Link
                   href={link.href}
-                  className="transition hover:underline hover:text-camel"
+                  className="transition hover:underline hover:text-lavender-blue"
                 >
                   {link.label}
                 </Link>
