@@ -9,7 +9,7 @@ this is my portfolio website, i’m using this project to practice, explore desi
 ## 🌐 live site 
 **[mariaajoseefi.github.io](https://mariaajoseefi.github.io)**
  
-this repo is the full-stack codebase. the deployed version lives in the [github pages repo !](https://github.com/mariaajoseefi/mariaajoseefi.github.io)
+this repo is the full-stack codebase, the deployed version lives in the [github pages repo !](https://github.com/mariaajoseefi/mariaajoseefi.github.io)
 
 ## ✏️ tech stack
  
@@ -28,7 +28,7 @@ this repo is the full-stack codebase. the deployed version lives in the [github 
 
 ## ⏰ project status
 
-this project is **under construction**.
+this project is **under construction**
 
 future plans include:
 - a backend API built with python
