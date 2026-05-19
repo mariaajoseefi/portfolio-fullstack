@@ -1,45 +1,45 @@
-<h1><img src="./public/images/ui/acww-icon.png" alt="icon" width="40" /> Majo's Portfolio</h1>
+<h1><img src="./frontend/public/images/ui/acww-icon.png" alt="icon" width="40" />   welcome to my portfolio</h1>
 
-# Majo’s Portfolio
-
-This is my portfolio website, I’m using this project to practice, explore design, and document what I learn along the way.
+this is my portfolio website, i’m using this project to practice, explore design, and document what i learn along the way !
 
 <div align="center">
-<img src="./public/images/ui/preview.png" alt="preview" /> 
+<img src="./frontend/public/images/ui/preview.png" alt="preview" /> 
+</div>
 
-**Live Site:** **[mariaajoseefi.github.io](https://mariaajoseefi.github.io)**
+## 🌐 live site 
+**[mariaajoseefi.github.io](https://mariaajoseefi.github.io)**
  
-> This repo is the full-stack codebase. The deployed version lives in the [GitHub Pages repo →](https://github.com/mariaajoseefi/mariaajoseefi.github.io)
+this repo is the full-stack codebase. the deployed version lives in the [github pages repo !](https://github.com/mariaajoseefi/mariaajoseefi.github.io)
 
-## Tech Stack
+## ✏️ tech stack
  
-### Frontend
-| Tech | Purpose |
+### frontend
+| tech | purpose |
 |------|---------|
-| **Next.js** (App Router) | Framework & routing |
-| **TypeScript** | Type safety |
-| **Tailwind CSS** | Styling |
- 
-### Backend *(coming soon)*
-| Tech | Purpose |
+| **next.js** (app router) | framework & routing |
+| **typescript** | type safety |
+| **tailwind css** | styling |
+
+### backend *(coming soon)*
+| tech | purpose |
 |------|---------|
-| **Python** | Backend language |
-| **FastAPI** | API framework |
+| **python** | backend language |
+| **fastAPI** | API framework |
 
-## Project Status
+## ⏰ project status
 
-This project is **under construction**.
+this project is **under construction**.
 
-Future plans include:
-- A backend API built with Python
-- Better animations and interactions
+future plans include:
+- a backend API built with python
+- better animations and interactions
 
-## Learning Log
+## 📒 learning log
  
-I'm keeping a running log of things I learn while building this project.
+i'm keeping a running log of things i learn while building this project
  
-→ Check out [`LEARNING.md`](./LEARNING.md)
+check out [`LEARNING.md`!](./LEARNING.md)
 
 <div align="center">
-  <sub>Made with curiosity and a lot of coffee</sub>
+  <sub>made with curiosity and a lot of coffee</sub>
 </div>
