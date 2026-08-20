@@ -1,39 +1,33 @@
 /* purpose: global layout for shared styles, fonts, and structure */
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Coustard, Imperial_Script } from "next/font/google";
+import { DM_Mono, Inter } from "next/font/google";
+// next.js processes this global stylesheet at build time; typescript may not
+// have declarations for side-effect CSS imports in editor diagnostics
+// @ts-expect-error CSS is handled by next.js, not typescript.
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/Footer";
+import SparkleCursor from "@/components/ui/SparkleCursor";
 
-// configure fonts using Next.js font optimization
+// configure fonts for optimization
 
-const coustard = Coustard({
-  variable: "--font-coustard",
+const dmMono = DM_Mono({
+  variable: "--font-dm-mono",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["300", "400", "500"],
 });
 
-const imperialScript = Imperial_Script({
-  variable: "--font-imperial-script",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400"],
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "variable",
 });
 
 // global metadata for SEO and browser info
 
 export const metadata: Metadata = {
-  title: "majo's portfolio",
-  description: "developer focused on thoughtful design, clean code, and meaningful user experiences",
+  title: "majo félix",
+  description: "this is majo's portfolio, she's probably debugging something right now!",
 };
 
 export default function RootLayout({
@@ -44,8 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${coustard.variable} ${imperialScript.variable} antialiased`}
+        className={`${dmMono.variable} ${inter.variable} antialiased`}
       >
+        <SparkleCursor />
         {children}
         <Footer />
       </body>
