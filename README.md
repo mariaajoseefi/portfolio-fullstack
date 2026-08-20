@@ -1,10 +1,6 @@
-<h1><img src="./frontend/public/images/ui/acww-icon.png" alt="icon" width="40" />   welcome to my portfolio</h1>
+# ‧₊˚✩彡 welcome to my portfolio 彡‧₊˚✩
 
-this is my portfolio website, i’m using this project to practice, explore design, and document what i learn along the way !
-
-<div align="center">
-<img src="./frontend/public/images/ui/preview.png" alt="preview" /> 
-</div>
+this is my website portfolio, i’m using this project to practice, explore design, and document what i learn along the way !
 
 ## 🌐 live site 
 **[mariaajoseefi.github.io](https://mariaajoseefi.github.io)**
@@ -40,6 +36,4 @@ i'm keeping a running log of things i learn while building this project
  
 check out [`LEARNING.md`!](./LEARNING.md)
 
-<div align="center">
-  <sub>made with curiosity and a lot of coffee</sub>
-</div>
+𐙚⊹₊⋆ made with a lot of coffee and this [album on repeat !](https://open.spotify.com/album/4bR7pd6TVS53l24qFV4wI8?si=uIFLZXYDQrugH3ngPTFsqQ)
