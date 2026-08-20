@@ -1,7 +1,5 @@
 /* purpose: footer component with contact links */
 
-import Image from "next/image";
-
 // data-driven social links
 const socialLinks = [
   {
@@ -25,20 +23,11 @@ export default function Footer() {
         
         {/* call-to-action */}
         <div>
-          <p className="text-2xl mb-4">
-            ─────── *ੈ✩‧₊˚✧˖*°࿐
+          <p className="text-2xl mb-10">
+            ─────────── *ੈ✩‧₊˚✧˖*°࿐
           </p>
-          <h2 className="text-5xl mb-6">
-            Let's keep in{" "}
-            <span className="font-imperial text-7xl inline-block">touch!</span>
-            <Image
-              src="/images/ui/star-face.png"
-              alt=""
-              aria-hidden="true"
-              width={50}
-              height={50}
-              className="inline-block ml-2 -mt-12 rotate-21"
-            />
+          <h2 className="text-4xl font-medium mb-10">
+            Let's keep in touch!
           </h2>
 
           <div className="flex gap-8 text-lg">
@@ -48,27 +37,22 @@ export default function Footer() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline hover:text-lavender-blue transition"
+                className="group relative block h-[1.2em] overflow-hidden"
               >
-                {link.label}
+                <span className="flex flex-col transition-transform duration-300 ease-out group-hover:-translate-y-1/2">
+                  <span>{link.label}</span>
+                  <span aria-hidden="true">{link.label}</span>
+                </span>
               </a>
             ))}
           </div>
+          
         </div>
-
-        {/* decorative image */}
-        <Image
-          src="/images/ui/acww-icon.png"
-          alt="Animal Crossing Wild World Icon"
-          width={150}
-          height={150}
-          className="opacity-90"
-        />
       </div>
 
       {/* footer note */}
-      <div className="max-w-5xl mx-auto mt-3 text-sm opacity-70">
-        <p>© 2026 Majo</p>
+      <div className="max-w-5xl mx-auto mt-12 text-sm opacity-70">
+        <p>© 2026</p>
       </div>
     </footer>
   );
