@@ -5,34 +5,27 @@
 /* design tokens: centralized variables for colors and typography */
 :root {
   /* fonts */
-  --font-geist-sans: 'Geist Sans', sans-serif;
-  --font-coustard: 'Coustard', serif;
-  --font-imperial-script: 'Imperial Script', cursive;
+  --font-dm-mono: 'DM Mono', monospace;
+  --font-inter: 'Inter', sans-serif;
 
   /* colors */
   --background: #ffffff;
   --foreground: #121212;
 
   /* custom palette */
-  --lavender-blue: #b1b4d5;
-  --dusty-rose: #e3a3a4;
+  --powder-blue: #87accc;
   --butter-yellow: #ece398;
-  --navy-blue: #1f3c66;
-  --burgundy: #54152a;
-  --olive-brown: #5b4722;
+  --mist-gray: #f2f3f3;
 }
 
-/* expose variables to Tailwind utilities (Tailwind v4 way) */
+/* variables to tailwind utilities */
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   
-  --color-lavender-blue: var(--lavender-blue);
-  --color-dusty-rose: var(--dusty-rose);
+  --color-powder-blue: var(--powder-blue);
   --color-butter-yellow: var(--butter-yellow);
-  --color-navy-blue: var(--navy-blue);
-  --color-burgundy: var(--burgundy);
-  --color-olive-brown: var(--olive-brown);
+  --color-mist-gray: var(--mist-gray);
 }
 
 /* base styles: global element defaults */
@@ -40,17 +33,21 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: var(--font-geist-sans);
+    font-family: var(--font-inter);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-coustard);
+    font-family: var(--font-dm-mono);
   }
 }
 
 /* utilities: reusable custom classes */
 @layer utilities {
-  .font-imperial {
-    font-family: var(--font-imperial-script);
+  .font-dm-mono {
+    font-family: var(--font-dm-mono);
+  }
+
+  .link-hover {
+    @apply underline hover:text-powder-blue;
   }
 }
