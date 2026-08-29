@@ -13,8 +13,17 @@
   --foreground: #121212;
 
   /* custom palette */
+  --plum: #a67cb1;
+  --dusty-pink: #cfa4c7;
+  --lilac: #ccaad0;
+  --blush-pink: #edddea;
   --powder-blue: #87accc;
+  --sky-blue: #98bfd0;
+  --powder-blue-light: #c7dde6;
   --butter-yellow: #ece398;
+  --mint-green: #d5ead8;
+  --sage-green: #aed2ab;
+  --ash-white: #c9c9c2;
   --mist-gray: #f2f3f3;
 }
 
@@ -23,8 +32,17 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   
+  --color-plum: var(--plum);
+  --color-dusty-pink: var(--dusty-pink);
+  --color-lilac: var(--lilac);
+  --color-blush-pink: var(--blush-pink);
   --color-powder-blue: var(--powder-blue);
+  --color-sky-blue: var(--sky-blue);
+  --color-powder-blue-light: var(--powder-blue-light);
   --color-butter-yellow: var(--butter-yellow);
+  --color-mint-green: var(--mint-green);
+  --color-sage-green: var(--sage-green);
+  --color-ash-white: var(--ash-white);
   --color-mist-gray: var(--mist-gray);
 }
 

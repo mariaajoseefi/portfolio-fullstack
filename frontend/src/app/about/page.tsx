@@ -1,7 +1,10 @@
 /* purpose: about page */
+"use client";
 
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -10,19 +13,19 @@ export default function About() {
       <main className="relative w-full overflow-hidden">
 
         {/* hero section: bio text + photo cutout */}
-        <section className="px-12 pt-16">
-          <div className="flex flex-row items-start justify-between gap-10 max-w-5xl mx-auto">
+        <section className="px-12 pt-2 sm:pt-4 md:pt-16">
+          <div className="flex flex-col-reverse gap-30 md:gap-10 md:flex-row items-center md:items-start justify-between max-w-5xl mx-auto">
 
             {/* left: bio text */}
-            <div className="flex flex-col gap-10 max-w-lg pt-8 pb-30">
+            <div className="flex flex-col gap-10 max-w-lg pt-8 pb-5 md:pb-30">
               <p className="text-xl font-dm-mono leading-relaxed">
-                Hello, World! I'm Majo, a software engineer graduate based in Mexico City.
-                I love to learn anything related to computers, and I try to buil side projects every
+                Hello, World! I&apos;m Majo, a software engineer graduate based in Mexico City.
+                I love to learn anything related to computers, and I try to build side projects every
                 now and then to pick up new stuff.
               </p>
 
               <p className="text-xl font-dm-mono leading-relaxed">
-                When I'm not coding, I'm probably{" "}
+                When I&apos;m not coding, I&apos;m probably{" "}
                 <a
                   href="https://letterboxd.com/mariajosefi/"
                   target="_blank"
@@ -49,35 +52,39 @@ export default function About() {
                 >
                   catching up on my reading list
                 </a>
-                . I'm always open to learning, collaborating, and exploring new ideas!
+                . I&apos;m always open to learning, collaborating, and exploring new ideas!
               </p>
             </div>
 
-            {/* right: photo cutout */}
-            <div className="relative shrink-0 w-95">
+            {/* right: images */}
+            <div className="relative shrink-0 w-95 mx-5 md:mx-0">
+              <motion.div whileHover={{ scale: 1.03, rotate: -2 }} className="relative">
+                
+                {/* photo cutout */}
+                <Image
+                  src="/images/about/majo-cutout.png"
+                  alt="photo of majo"
+                  width={380}
+                  height={480}
+                  className="relative object-contain md:-translate-x-20 md:-translate-y-12"
+                />
 
-              {/* photo cutout */}
-              <Image
-                src="/images/about/majo-cutout.png"
-                alt="photo of majo"
-                width={380}
-                height={480}
-                className="relative object-contain -translate-x-20 -translate-y-12"
-              />
+                {/* sticky note - bottom right of photo */}
+                <Image
+                  src="/images/home/board/note2.png"
+                  alt=""
+                  aria-hidden="true"
+                  width={230}
+                  height={230}
+                  className="absolute -bottom-30 right-5 -rotate-2 md:-bottom-20"
+                />
 
-              {/* sticky note - bottom right of photo */}
-              <Image
-                src="/images/home/board/note7.png"
-                alt=""
-                aria-hidden="true"
-                width={170}
-                height={170}
-                className="absolute -bottom-8 right-20 -rotate-2"
-              />
+              </motion.div>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </>
   )
 }

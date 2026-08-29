@@ -2,11 +2,7 @@
 
 import type { Metadata } from "next";
 import { DM_Mono, Inter } from "next/font/google";
-// next.js processes this global stylesheet at build time; typescript may not
-// have declarations for side-effect CSS imports in editor diagnostics
-// @ts-expect-error CSS is handled by next.js, not typescript.
 import "./globals.css";
-import Footer from "@/components/layout/Footer";
 import SparkleCursor from "@/components/ui/SparkleCursor";
 
 // configure fonts for optimization
@@ -42,7 +38,6 @@ export default function RootLayout({
       >
         <SparkleCursor />
         {children}
-        <Footer />
       </body>
     </html>
   );
