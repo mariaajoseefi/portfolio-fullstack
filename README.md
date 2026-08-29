@@ -16,19 +16,26 @@ this repo is the full-stack codebase, the deployed version lives in the [github 
 | **typescript** | type safety |
 | **tailwind css** | styling |
 
-### backend *(coming soon)*
+### backend
 | tech | purpose |
 |------|---------|
 | **python** | backend language |
 | **fastAPI** | API framework |
+| **SQLAlchemy** | ORM |
+| **SQLite** | database |
+
+## 🌀 how it works
+
+project data lives in a sqlite database, served through a fastapi backend. the next.js frontend fetches from that api at build time and exports the site as static files, deployed to github pages.
 
 ## ⏰ project status
 
-this project is **under construction**
+the site is **live**, with a working full-stack setup: next.js frontend, fastapi backend, and a sqlite database powering the projects section.
 
-future plans include:
-- a backend API built with python
-- better animations and interactions
+still iterating on:
+- adding more projects and case studies
+- refining animations and interactions
+- polishing mobile responsiveness
 
 ## 📒 learning log
  
