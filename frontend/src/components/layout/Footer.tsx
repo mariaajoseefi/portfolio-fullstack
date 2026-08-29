@@ -1,18 +1,19 @@
 /* purpose: footer component with contact links */
+import Image from "next/image";
 
 // data-driven social links
 const socialLinks = [
   {
     href: "mailto:mariajosefinclan@gmail.com",
-    label: "Email ↗",
+    label: "Email",
   },
   {
-    href: "https://linkedin.com/in/mariajosefi",
-    label: "LinkedIn ↗",
+    href: "https://linkedin.com/in/mariaajoseefi",
+    label: "LinkedIn",
   },
   {
     href: "https://github.com/mariaajoseefi",
-    label: "GitHub ↗",
+    label: "GitHub",
   },
 ];
 
@@ -23,26 +24,36 @@ export default function Footer() {
         
         {/* call-to-action */}
         <div>
-          <p className="text-2xl mb-10">
+          <p className="text-lg sm:text-2xl md:text-3xl mb-10">
             ─────────── *ੈ✩‧₊˚✧˖*°࿐
           </p>
-          <h2 className="text-4xl font-medium mb-10">
-            Let's keep in touch!
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-10">
+            Let&apos;s keep in touch!
           </h2>
 
-          <div className="flex gap-8 text-lg">
+          <div className="flex gap-8 text-base sm:text-lg md:text-xl">
             {socialLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative block h-[1.2em] overflow-hidden"
+                className="group relative flex items-center gap-1"
               >
-                <span className="flex flex-col transition-transform duration-300 ease-out group-hover:-translate-y-1/2">
-                  <span>{link.label}</span>
-                  <span aria-hidden="true">{link.label}</span>
+                <span className="relative block h-[1.2em] overflow-hidden">
+                  <span className="flex flex-col transition-transform duration-300 ease-out group-hover:-translate-y-1/2">
+                    <span>{link.label}</span>
+                    <span aria-hidden="true">{link.label}</span>
+                  </span>
                 </span>
+
+                <Image
+                  src="/images/ui/arrow-outcome.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width={18}
+                  height={18}
+                />
               </a>
             ))}
           </div>
@@ -51,7 +62,7 @@ export default function Footer() {
       </div>
 
       {/* footer note */}
-      <div className="max-w-5xl mx-auto mt-12 text-sm opacity-70">
+      <div className="max-w-5xl mx-auto mt-12 text-sm text-center md:text-left opacity-70">
         <p>© 2026</p>
       </div>
     </footer>

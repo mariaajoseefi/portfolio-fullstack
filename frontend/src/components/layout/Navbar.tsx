@@ -24,7 +24,7 @@ export default function Navbar({ variant = "default", layout = "centered" }: Nav
   const position =
     variant === "overlay"
       ? "absolute top-6 sm:top-12 md:top-22"
-      : "relative mt-4 sm:mt-6 md:mt-10";
+      : "relative mt-8 sm:mt-10 md:mt-10";
 
   // shared nav links markup
   const links = (
@@ -74,8 +74,8 @@ export default function Navbar({ variant = "default", layout = "centered" }: Nav
       <div className="max-w-5xl mx-auto px-1">
         {layout === "split" ? (
           /* split layout — title and links side by side */
-          <div className="flex items-center justify-between">
-            <span className="font-dm-mono font-medium text-4xl tracking-tight">Majo Félix</span>
+          <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+            <span className="font-dm-mono font-medium text-3xl sm:text-3xl md:text-5xl mb-3 tracking-tight">Majo Félix</span>
             {links}
           </div>
         ) : (
