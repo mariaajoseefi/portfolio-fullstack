@@ -91,7 +91,7 @@ export default function HeartLoader({ onComplete }: HeartLoaderProps) {
 
   return (
     <div className="fixed inset-0 z-999 flex items-center justify-center bg-background">
-      <canvas ref={canvasRef} width={500} height={600} />
+      <canvas ref={canvasRef} width={500} height={600} className="w-[100vw] max-w-[350px] md:max-w-[500px] h-auto" />
     </div>
   );
 }
