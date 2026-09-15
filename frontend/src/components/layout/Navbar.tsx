@@ -75,7 +75,9 @@ export default function Navbar({ variant = "default", layout = "centered" }: Nav
         {layout === "split" ? (
           /* split layout — title and links side by side */
           <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
-            <span className="font-dm-mono font-medium text-3xl sm:text-3xl md:text-5xl mb-3 tracking-tight">Majo Félix</span>
+            <Link href="/" className="font-dm-mono font-medium text-3xl sm:text-3xl md:text-5xl mb-3 tracking-tight link-home-hover">
+              Majo Félix
+            </Link>
             {links}
           </div>
         ) : (

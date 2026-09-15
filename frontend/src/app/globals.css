@@ -68,4 +68,8 @@
   .link-hover {
     @apply underline hover:text-powder-blue;
   }
+
+  .link-home-hover {
+    @apply hover:text-dusty-pink;
+  }
 }

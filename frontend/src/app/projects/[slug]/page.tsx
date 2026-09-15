@@ -53,12 +53,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <h1 className="text-5xl font-medium mb-4">{project.title}</h1>
         <p className="text-xl opacity-50 mb-10 mt-5">{project.description}</p>
 
-        <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+        <div className="relative w-full rounded-3xl overflow-hidden">
           <Image
             src={project.image[1]}
             alt={project.title}
-            fill
-            className="object-contain"
+            width={1200}
+            height={675}
+            className="w-full h-auto object-contain"
           />
         </div>
 

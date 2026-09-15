@@ -8,6 +8,7 @@ import HeartLoader from "@/components/ui/HeartLoader";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer"
 import Board from "@/components/sections/Board";
+import Link from "next/link";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,9 +49,12 @@ export default function Home() {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           className="w-full"
         >
-          <h1 className="text-center text-3xl sm:text-4xl md:text-6xl tracking-tight pt-10 mb-6">
-            Majo Félix
-          </h1>
+          <Link href="/">
+            <h1 className="text-center text-3xl sm:text-4xl md:text-6xl tracking-tight pt-10 mb-6 link-home-hover">
+              Majo Félix
+            </h1>
+          </Link>
+          
           <Navbar />
           <Board />
           <Footer />
