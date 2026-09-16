@@ -50,7 +50,7 @@ export default function Home() {
           className="w-full"
         >
           <Link href="/">
-            <h1 className="text-center text-3xl sm:text-4xl md:text-6xl tracking-tight pt-10 mb-6 link-home-hover">
+            <h1 className="font-dm-mono font-medium text-center text-3xl sm:text-4xl md:text-6xl tracking-tight pt-10 mb-6 link-home-hover md:text-foreground">
               Majo Félix
             </h1>
           </Link>
